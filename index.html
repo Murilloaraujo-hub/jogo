@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100f19">
+  <meta name="description" content="Cinzas do Relógio — uma aventura original de plataforma, tinta, aço e sombra.">
+  <title>Cinzas do Relógio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell" aria-label="Jogo Cinzas do Relógio">
+    <canvas id="game" width="960" height="540" aria-label="Área do jogo. Use as setas ou A e D para se mover."></canvas>
+    <div class="touch-controls" aria-label="Controles de toque">
+      <div class="touch-left">
+        <button class="touch-button" data-key="ArrowLeft" aria-label="Mover para a esquerda">◀</button>
+        <button class="touch-button" data-key="ArrowRight" aria-label="Mover para a direita">▶</button>
+      </div>
+      <div class="touch-right">
+        <button class="touch-button touch-accent" data-key="Space" aria-label="Pular">↟</button>
+        <button class="touch-button" data-key="ShiftLeft" aria-label="Investida">⤴</button>
+        <button class="touch-button touch-accent" data-key="KeyJ" aria-label="Atirar">✦</button>
+      </div>
+    </div>
+    <p class="screen-reader-only" id="game-help">No menu, pressione Enter para começar. Durante o jogo: A e D ou setas para mover, Espaço para pular, J para atirar, Shift para investida e Esc para pausar.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
